@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './AnimalShow.css'
 
 
 import bird from './svg/bird.svg'
@@ -28,16 +29,16 @@ horse
 function AnimalShow({type}) {
   const[click,SetClick]=useState(0);
 
-  
+
 const handleClick=()=>{
 
 SetClick(click+1)
 
 }
   
-  return <div onClick={handleClick}>
-    <img src={svgMap[type]} alt="Aniamlas picture" />
-    <img src={heart} alt="" 
+  return <div className="animal-show" onClick={handleClick}>
+    <img className="animal" src={svgMap[type]} alt="Aniamlas picture" />
+    <img className='heart' src={heart} alt="" 
     style={{width:10 + 10 * click + 'px'}}
     
     />
