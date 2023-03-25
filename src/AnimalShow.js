@@ -1,23 +1,29 @@
-import React, { useState } from 'react'
+import bird from './svg/bird.svg'
+import cat from './svg/cat.svg'
+import cow from './svg/cow.svg'
+import dog from './svg/dog.svg'
+import gator from './svg/gator.svg'
+import heart from './svg/heart.svg'
+import horse from './svg/horse.svg'
 
-export default function AnimalShow() {
- 
-    const [count,setCount]=useState(0);
+const svgMap={
+bird,
+cat,
+cow,
+dog,
+gator,
+heart,
+horse
 
-
- const handleClick=() => {
-
-setCount(count+1);
-
-
- }
-
-
-
-  return (
-    <div>
-      <button onClick={handleClick}> Add Animal</button>
-      <h1>You clicked {count} times</h1>
-    </div>
-  )
 }
+
+
+
+
+function AnimalShow({type}) {
+  return <div>
+    <img src={svgMap[type]} alt="Aniamlas picture" />
+  </div>;
+}
+
+export default AnimalShow;
