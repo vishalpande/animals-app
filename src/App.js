@@ -28,4 +28,4 @@ return<AnimalShow type={animal} key={index}/>
   );
 }
 
-export default App;.
+export default App;
