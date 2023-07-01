@@ -15,6 +15,7 @@ import horse from './svg/horse.svg'
 
 
 const svgMap={
+  
 bird,
 cat,
 cow,
