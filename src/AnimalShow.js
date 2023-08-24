@@ -10,10 +10,6 @@ import gator from './svg/gator.svg'
 import heart from './svg/heart.svg'
 import horse from './svg/horse.svg'
 
-
-
-
-
 const svgMap={
 bird,
 cat,
